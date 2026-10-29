@@ -2,8 +2,8 @@
 
 **Project:** Bristol Regional Food Network Digital Food Marketplace  
 **Assigned use case:** Use Case 1 – Producer Product Listing and Inventory Management  
-**Contributor:** Tomisin 
-**Purpose:** Support the group's enterprise-level strategic BPMN and Sprint 1 analysis.
+**Contributor:** Tomi  
+**Purpose:** to Support the group's enterprise-level strategic BPMN and Sprint 1 analysis.
 
 ## 1. Major Business Processes
 
@@ -29,7 +29,7 @@
 | Organic Certification Verification Service | Verify claimed organic certification information and return a result. | Product Management |
 | Payment Service | Process payment requests and return success, decline or unavailable outcomes. | Payment Processing |
 
-**Responsibility note:** Human/organisational actors should be distinguished from software systems and external services. The marketplace administrator's authority outside food-quality incident management is not established by the supplied use cases.
+
 
 ## 3. External Service Interactions
 
@@ -38,10 +38,3 @@
 | Organic Certification Verification Service | A producer claims organic certification when submitting a product. | The marketplace checks certification details through an external or simulated service and receives a verification outcome. | Handle unsuccessful verification or service unavailability; do not assume the product can be published without successful required validation. |
 | Payment Service | A customer confirms an order and payment is submitted. | The marketplace sends the payment request to an external or simulated service and receives an outcome. | Inform customer of declined payment and allow retry; handle temporary service unavailability through an exception or retry path. |
 
-
-
-## Sources
-
-- *Task 1 – Use Cases*, Use Cases 1–3 (provided assessment materials).
-- *UFCFTR-30-3 – First Sit – Task 1*, Sprint 1 and repository requirements (provided assessment brief).
-- Group's existing Sprint 1 enterprise process analysis (for the six-process structure).
