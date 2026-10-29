@@ -16,7 +16,7 @@
 | Food Quality Assurance and Traceability | Record food-quality incidents, identify affected products and customer orders, coordinate notifications and review incident closure. | Customer; Producer; Marketplace Administrator; Marketplace System |
 | Sustainability and Community Engagement | Represent the broader local-food and sustainability aims identified in the group's enterprise analysis. | Marketplace stakeholders (specific responsibilities to confirm) |
 
-**Scope note:** The first five processes are grounded in the supplied use cases. Sustainability and Community Engagement is a broader process identified in the group's analysis; the supplied use-case descriptions do not specify its detailed workflow. The case study requires producer allocations and a 5% commission calculation but does not prescribe a settlement schedule.
+
 
 ## 2. Actors and Organisational Responsibilities
 
