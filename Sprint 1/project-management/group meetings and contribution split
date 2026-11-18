@@ -1,0 +1,26 @@
+
+# Group Meetings
+
+This document records the group meetings held during Sprint 0 and Sprint 1, including key discussions, decisions and follow-up actions.
+
+## Sprint 0 and Sprint 1 Meeting Records
+
+| Date | Meeting Focus | Discussions | Decisions Made | Actions |
+|---|---|---|---|---|
+| Thursday 8th October 2026 | Sprint 0 – Group Formation & Preparation | Discussed the Local Food Marketplace case study, Use Case 1 requirements, communication arrangements and initial responsibilities. | Confirmed the group and selected Use Case 1: Producer Product Listing and Inventory Management. | Begin analysing the case study, identify stakeholders and major processes, and prepare for Sprint 1. |
+| Tuesday 13th October 2026 | Sprint 1 – Requirements & Business Analysis | Discussed major business processes, key actors, organisational responsibilities and the strategic BPMN requirements. | Agreed to begin enterprise-level analysis and identify candidate functionalities. | Continue business analysis, identify stakeholders and start developing the strategic BPMN model. |
+| Wednesday 21st October 2026 | Sprint 1 – Progress Review | Reviewed progress on business analysis, strategic BPMN modelling and possible functionalities. Discussed outstanding work and any difficulties. | Agreed to continue refining the models and functionality scope before the review. | Review BPMN accuracy, develop the functionality justification and identify remaining Sprint 1 tasks. |
+| Tuesday 27th October 2026 | Sprint 1 – Project Management & Task Reallocation | Discussed organising project files in GitHub, selecting a project management platform and improving task allocation. | Agreed to use Notion for project management and GitHub for version control and assessment evidence. Redistributed tasks to establish clearer individual responsibilities. | Upload Sprint 1 deliverables to GitHub, organise the Notion backlog and Kanban board, update individual task assignments, and reorganise work into clear pages. |
+
+---
+
+# Team Contributions
+
+## Team Responsibilities
+
+| Member | Responsibility |
+|---|---|
+| Hamna | Sprint Planning, backlog, Kanban board |
+| Khadija | Strategic BPMN modelling |
+| Tomi | Business process and organisational analysis |
+| Tahiyah | Functionality selection, scope and justification |

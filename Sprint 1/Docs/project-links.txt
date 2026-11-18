@@ -1,0 +1,30 @@
+DAESD – Sprint 1 Review
+
+Project: Bristol Regional Food Network
+Group: 31
+Use Case: Producer Product Listing and Inventory Management
+
+GitHub/GitLab Repository:
+[Insert repository URL]
+
+Notion Project Management Board:
+https://app.notion.com/p/Identify-Major-business-processes-406bc5ff102a8003b066f60e4ddbb21a?source=copy_link
+
+Presentation Format:
+[In-class / Pre-recorded video]
+
+Group Members:
+[Full Name – Student ID]
+[Full Name – Student ID]
+[Full Name – Student ID]
+[Full Name – Student ID]
+
+Evidence of Sprint 1 Work:
+- Strategic BPMN model
+- Business analysis
+- Functionality selection and justification
+- Sprint planning and Kanban board
+- Risk register
+- GitHub contribution history
+
+Note: Supporting project artefacts are available through the repository and project-management links above.
