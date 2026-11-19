@@ -59,7 +59,7 @@ async def handle_inventory_save(job: ConnectedJobContext):
 
     # Initial implementation: process variables only
     result = {
-        "stockQuantity": product["updatedStockQuantity"]
+        "stockQuantity": product["stockQuantity"]
     }
 
     print("Inventory process variables updated:", result)
@@ -88,15 +88,15 @@ async def handle_unavailable(job: ConnectedJobContext):
 async def main():
 
     workers = {
-        "validate-product": handle_validation,
-        "verify-organic-certification": handle_certification,
-        "set-listing-pending": handle_pending,
-        "publish-product": handle_publication,
-        "validate-inventory-update": handle_inventory_validation,
-        "save-inventory-update": handle_inventory_save,
-        "set-product-available": handle_available,
-        "set-product-unavailable": handle_unavailable
-    }
+    "brfn31-validate-product": handle_validation,
+    "brfn31-verify-organic-certification": handle_certification,
+    "brfn31-set-listing-pending": handle_pending,
+    "brfn31-publish-product": handle_publication,
+    "brfn31-validate-inventory-update": handle_inventory_validation,
+    "brfn31-save-inventory-update": handle_inventory_save,
+    "brfn31-set-product-available": handle_available,
+    "brfn31-set-product-unavailable": handle_unavailable
+}
 
     async with CamundaAsyncClient(
         configuration={"CAMUNDA_LOAD_ENVFILE": "true"}

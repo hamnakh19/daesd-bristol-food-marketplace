@@ -3,7 +3,7 @@ from datetime import date
 
 def update_availability(product):
 
-    stock = product.get("updatedStockQuantity")
+    stock = product.get("stockQuantity")
     start = product.get("availabilityStartDate")
     end = product.get("availabilityEndDate")
 
@@ -47,35 +47,35 @@ if __name__ == "__main__":
 
     # Test 1: Available product
     print("Test 1:", update_availability({
-        "updatedStockQuantity": 20,
+        "stockQuantity": 20,
         "availabilityStartDate": "2026-01-01",
         "availabilityEndDate": "2026-12-31"
     }))
 
     # Test 2: Out of stock
     print("Test 2:", update_availability({
-        "updatedStockQuantity": 0,
+        "stockQuantity": 0,
         "availabilityStartDate": "2026-01-01",
         "availabilityEndDate": "2026-12-31"
     }))
 
     # Test 3: Outside season
     print("Test 3:", update_availability({
-        "updatedStockQuantity": 15,
+        "stockQuantity": 15,
         "availabilityStartDate": "2026-01-01",
         "availabilityEndDate": "2026-03-31"
     }))
 
     # Test 4: Invalid stock
     print("Test 4:", update_availability({
-        "updatedStockQuantity": -5,
+        "stockQuantity": -5,
         "availabilityStartDate": "2026-01-01",
         "availabilityEndDate": "2026-12-31"
     }))
 
     # Test 5: Invalid seasonal dates
     print("Test 5:", update_availability({
-        "updatedStockQuantity": 10,
+        "stockQuantity": 10,
         "availabilityStartDate": "2026-12-31",
         "availabilityEndDate": "2026-01-01"
     }))
