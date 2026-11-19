@@ -1,81 +1,86 @@
-# Traceability Between i*, Strategic BPMN and Operational BPMN
-
+# Traceability Between i\*, Strategic BPMN and Operational BPMN
 
 ## 1. Overview
 
-For Sprint 2, I worked on connecting our i* Strategic Dependency (SD) and Strategic Rationale (SR) models with the Strategic BPMN from Sprint 1 and the two Operational BPMN models developed in Sprint 2.
+For Sprint 2, my responsibility was to create two detailed Operational BPMN models and show how they connect to the stakeholder requirements identified in our group's earlier models.
 
-The i* SD model identifies the main actors and what they depend on each other for. The SR model explains the actors' goals and the tasks they need to carry out to achieve them.
+Another group member developed the i\* Strategic Dependency (SD) and Strategic Rationale (SR) models. I reviewed these models to understand the relationships between stakeholders, their goals and their responsibilities.
 
-The Strategic BPMN shows the main business processes within the Bristol Regional Food Network, while the Operational BPMNs show the detailed steps involved in Product Listing and Validation, and Inventory and Seasonal Availability Management.
+I then compared these requirements with the Strategic BPMN I created during Sprint 1 and the two Operational BPMNs I developed for Sprint 2.
 
-The aim of this traceability analysis is to show how the stakeholder requirements are represented across the different models.
+The purpose of this traceability analysis is to show how the requirements identified in the i\* models are represented in our business processes.
 
 ## 2. Traceability Table
 
-| i* SD Dependency | i* SR Model | Strategic BPMN | Operational BPMN |
-|---|---|---|---|
-| **Valid Product Listing Published** (Goal) | Valid Product Listing Published, Validate Product Information and Publish Approved Listing | Product Management and Inventory Control | BPMN 1: Validate Product Details → Publish Product |
-| **Product Information** (Resource) | Provide Product Information and Product Details | Product Management and Inventory Control | BPMN 1: Enter Product Information → Validate Product Details |
-| **Organic Certification Verification Result** (Resource) | Verify Organic Certification and Organic Certification Status Verified | Product Management and Inventory Control | BPMN 1: Organic Certification Claimed? → Request Organic Certification Verification → Certification Result? |
-| **Updated Inventory and Seasonal Information** (Resource) | Update Inventory and Seasonal Availability, and Stock and Seasonal Availability Details | Product Management and Inventory Control | BPMN 2: Update Stock and Seasonal Information → Validate Inventory Update → Save Inventory Update |
-| **Product Availability Correctly Updated** (Goal) | Product Availability Correctly Updated, Validate Inventory Update and Determine Product Availability | Product Management and Inventory Control | BPMN 2: Stock Greater Than Zero? → Within Seasonal Period? → Set Product Available/Unavailable |
-| **Product Availability Information** (Resource) | Browse Available Products and Available Products Identified | Product Management and Inventory Control; Customer Browsing and Ordering | BPMN 2: Set Product Available/Unavailable, providing the availability status needed by the customer-facing marketplace |
+| i\* Dependency                                 | Strategic BPMN                                                           | Operational BPMN                                                                                                 |
+| ---------------------------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| **Valid Product Listing Published**            | Product Management and Inventory Control                                 | BPMN 1: Validate Product Details → Publish Product                                                               |
+| **Product Information**                        | Product Management and Inventory Control                                 | BPMN 1: Enter Product Information → Validate Product Details                                                     |
+| **Organic Certification Verification Result**  | Product Management and Inventory Control                                 | BPMN 1: Request Organic Certification Verification → Certification Result?                                       |
+| **Updated Inventory and Seasonal Information** | Product Management and Inventory Control                                 | BPMN 2: Update Stock and Seasonal Information → Validate Inventory Update → Save Inventory Update                |
+| **Product Availability Correctly Updated**     | Product Management and Inventory Control                                 | BPMN 2: Stock Greater Than Zero? → Within Seasonal Period? → Set Product Available/Unavailable                   |
+| **Product Availability Information**           | Product Management and Inventory Control; Customer Browsing and Ordering | BPMN 2: Set Product Available/Unavailable, which determines the availability information used by the marketplace |
 
-## 3. Connection to Operational BPMN 1
+## 3. Connection to the i\* Models
 
-The first Operational BPMN focuses on Product Listing and Validation.
+The i\* SD model shows how different actors depend on each other. For example, the Producer depends on the Marketplace System to publish valid product listings, while the Marketplace depends on the Producer to provide product information.
 
-The Producer depends on the Marketplace System to publish valid product listings. This requirement is identified in the i* models and represented in the Strategic BPMN under Product Management and Inventory Control.
+The i\* SR model goes into more detail by showing the goals and tasks involved in achieving these requirements.
 
-In the Operational BPMN, I developed the detailed steps for entering product information, validating the details and requesting corrections when information is invalid.
+I used the models developed by another group member as references when checking whether my two Operational BPMNs covered the main requirements of Use Case 1.
 
-I also included the organic certification verification process. If certification is valid, the product can be published. If it is invalid, the information must be corrected. If the verification service is unavailable, the listing is kept pending verification.
+## 4. Operational BPMN 1 — Product Listing and Validation
 
-This shows how the stakeholder goals and dependencies are represented through tasks, gateways and alternative paths.
+The first Operational BPMN focuses on how producers submit products to the marketplace.
 
-## 4. Connection to Operational BPMN 2
+In the i\* models, one of the main goals is to have a valid product listing published. This is represented in the Strategic BPMN under Product Management and Inventory Control.
 
-The second Operational BPMN focuses on Inventory and Seasonal Availability Management.
+In my Operational BPMN, I developed the detailed steps showing how the producer enters product information and how the marketplace validates it.
 
-The Producer depends on the Marketplace to maintain accurate product availability. The i* models identify the need for updated inventory information and correctly updated product availability.
+I added gateways to check whether the information is valid. If it is incorrect, the producer is asked to correct it.
 
-In the Operational BPMN, I included the steps for updating stock quantities and seasonal information, validating the updates and correcting invalid details.
+I also included organic certification verification. If the certificate is valid, the product can be published. If it is invalid, the producer must correct the information. If the verification service is unavailable, the listing is kept pending.
 
-I also added decision gateways to check whether stock is greater than zero and whether the product is within its seasonal availability period.
+This connects the stakeholder requirements from the i\* models to the detailed product listing process.
 
-If both conditions are satisfied, the product can be made available. Otherwise, it becomes unavailable.
+## 5. Operational BPMN 2 — Inventory and Seasonal Availability Management
 
-This connects the stakeholder requirements to the detailed inventory management process.
+The second Operational BPMN focuses on how producers update their stock quantities and seasonal information.
 
-## 5. Relationship Between the Models
+The i\* models identify the need for accurate inventory information and correctly updated product availability.
 
-All the models focus on the same two functionalities but represent them at different levels.
+In my Operational BPMN, I included a process where producers update their stock information and the marketplace validates it.
 
-The i* SD model shows the dependencies between the Producer, Marketplace System, Customer and Organic Certification Verification Service.
+I added decision gateways to check whether stock is greater than zero and whether the product is within its seasonal period.
 
-The i* SR model shows the actors' goals and how they intend to achieve them.
+If both conditions are met, the product becomes available. If there is no stock or the product is out of season, it becomes unavailable.
 
-The Strategic BPMN represents Product Management and Inventory Control as one of the marketplace's major business processes.
+This shows how the requirements for accurate product availability are represented in the detailed inventory management process.
 
-The two Operational BPMNs develop this business process into detailed workflows with user tasks, service tasks, exclusive gateways, correction loops and different outcomes.
+## 6. How the Models Connect
 
-The Operational BPMNs provide a foundation for the Camunda automation work, including Forms, service-task implementation, process variables and business logic.
+The models represent the same business requirements at different levels.
 
-## 6. Remaining Implementation Considerations
+The *i SD model*\* identifies the dependencies between stakeholders.
 
-The second Operational BPMN updates product availability, but the customer-facing display of that information has not been modelled as a separate task.
+The *i SR model*\* explains the stakeholders' goals and how they can achieve them.
 
-The first Operational BPMN handles unavailable certification by setting a pending status, but an automatic retry mechanism still needs to be implemented.
+The **Strategic BPMN** shows the main business processes of the marketplace.
 
-The inventory process also needs a scheduled availability check so that seasonal changes can be applied without requiring the producer to submit another update.
+The **Operational BPMNs** show the detailed tasks, decisions and alternative paths needed to carry out the two selected functionalities.
 
-These are areas for further implementation and testing.
+For example, the Producer's goal of having a valid product listing published is identified in the i\* models. This connects to Product Management and Inventory Control in the Strategic BPMN. Operational BPMN 1 then shows how the product is submitted, checked and published.
+
+The inventory process follows the same approach by connecting the need for accurate product availability to the stock and seasonal checks in Operational BPMN 2.
+
+The second BPMN models how availability status is updated, while displaying that information to customers will require integration with the marketplace's customer-facing functionality.
 
 ## 7. Conclusion
 
-The traceability analysis shows how the requirements identified in the i* models connect to the Strategic BPMN and the two Operational BPMNs.
+This traceability analysis shows how the stakeholder requirements identified in the i\* models developed by another group member connect to our Strategic BPMN and the two Operational BPMNs I created.
 
-The first operational model supports the goal of publishing valid product listings, while the second supports accurate inventory and seasonal availability management.
+The first Operational BPMN supports Product Listing and Validation, while the second supports Inventory and Seasonal Availability Management.
 
-By connecting these models, the group can demonstrate how stakeholder requirements have been translated into detailed business processes that can be developed further in Camunda.
+By linking the models together, I have shown how the stakeholder requirements are represented through detailed business processes.
+
+These operational models also provide a foundation for the group's Camunda automation work, including user forms, service tasks, process variables and business logic.
