@@ -1,0 +1,243 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "e24511c"
+  },
+  "schemaVersion": 19,
+  "id": "Form_16dv4ba",
+  "components": [
+    {
+      "label": "Product Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0am38yt",
+        "columns": null
+      },
+      "id": "Field_1hhv0gp",
+      "key": "productName",
+      "description": "Enter the name of the product you want to list on the marketplace.",
+      "validate": {
+        "required": true,
+        "minLength": "2",
+        "maxLength": 100
+      }
+    },
+    {
+      "label": "Product Description",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1i1sg04",
+        "columns": null
+      },
+      "id": "Field_18gpfd3",
+      "key": "productDescription",
+      "description": "Describe the product, including its main features and characteristics.",
+      "validate": {
+        "minLength": "10",
+        "maxLength": "500",
+        "required": true
+      }
+    },
+    {
+      "label": "Product Category",
+      "values": [
+        {
+          "label": "Fruit",
+          "value": "fruit"
+        },
+        {
+          "label": "Vegetables",
+          "value": "vegetables"
+        },
+        {
+          "label": "Dairy and Eggs",
+          "value": "dairy_eggs"
+        },
+        {
+          "label": "Meat and Poultry",
+          "value": "meat_poultry"
+        },
+        {
+          "label": "Bakery",
+          "value": "bakery"
+        },
+        {
+          "label": "Preserves and Condiments",
+          "value": "preserves_condiments"
+        },
+        {
+          "label": "Other",
+          "value": "other"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_1nvtden",
+        "columns": null
+      },
+      "id": "Field_0rlo7pb",
+      "key": "productCategory",
+      "description": "Select the category that best describes your product.",
+      "validate": {
+        "required": true
+      },
+      "properties": { }
+    },
+    {
+      "label": "Product Price (£)",
+      "type": "number",
+      "layout": {
+        "row": "Row_039le05",
+        "columns": null
+      },
+      "id": "Field_1u9ek2z",
+      "key": "productPrice",
+      "description": "Enter the selling price per unit in pounds sterling.",
+      "validate": {
+        "required": true,
+        "min": "0.01",
+        "max": 10000
+      }
+    },
+    {
+      "label": "Stock Quantity",
+      "type": "number",
+      "layout": {
+        "row": "Row_0m8ylhn",
+        "columns": null
+      },
+      "id": "Field_1ej3c06",
+      "key": "stockQuantity",
+      "description": "Enter the number of units currently available for sale.",
+      "validate": {
+        "required": true,
+        "min": "0",
+        "max": 100000
+      },
+      "decimalDigits": 0,
+      "increment": "1"
+    },
+    {
+      "label": "Farm Origin",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0v35q3o",
+        "columns": null
+      },
+      "id": "Field_13gp2g1",
+      "key": "farmOrigin",
+      "description": "Enter the town, city or location where the product was produced.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Availability Start Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1k2ni1f",
+        "columns": null
+      },
+      "id": "Field_12mgu29",
+      "key": "availabilityStartDate",
+      "description": "Select the date from which this product will be available for customers.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Availability End Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_05lcsvk",
+        "columns": null
+      },
+      "id": "Field_1lvqf6w",
+      "key": "availabilityEndDate",
+      "description": "Select the final date this product will be available for customers.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Harvest Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1mkhbcs",
+        "columns": null
+      },
+      "id": "Field_0aeqabb",
+      "key": "harvestDate",
+      "description": "Select the date the product was harvested or produced."
+    },
+    {
+      "label": "Allergen Information",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1mcq2hj",
+        "columns": null
+      },
+      "id": "Field_0h4q6js",
+      "key": "allergenInformation",
+      "description": "List any allergens present in the product. If there are none, enter \"None\".",
+      "validate": {
+        "required": true,
+        "maxLength": "500"
+      }
+    },
+    {
+      "label": "Is this product organically certified?",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_0gm6je9",
+        "columns": null
+      },
+      "id": "Field_0kno2vs",
+      "key": "isOrganicCertified",
+      "description": "Tick this box if the product has valid organic certification."
+    },
+    {
+      "label": "Organic Certification Number",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_005qqqz",
+        "columns": null
+      },
+      "id": "Field_05ismap",
+      "key": "organicCertificationNumber",
+      "description": "Enter the reference number of your valid organic certification.",
+      "conditional": {
+        "hide": "=isOrganicCertified = false"
+      },
+      "properties": { }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Best-before Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_157d34y",
+        "columns": null
+      },
+      "id": "Field_12v274z",
+      "key": "bestBeforeDate",
+      "description": "Select the date by which the product should ideally be consumed."
+    },
+    {
+      "label": "Submit Product Listing",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_0jlh2zf",
+        "columns": null
+      },
+      "id": "Field_14h76ie"
+    }
+  ],
+  "type": "default"
+}

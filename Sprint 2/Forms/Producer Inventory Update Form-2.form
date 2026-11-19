@@ -1,0 +1,96 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.10.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "6a0669f"
+  },
+  "schemaVersion": 19,
+  "id": "Form_0nh80uv",
+  "components": [
+    {
+      "label": "Product Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_03zb2d8",
+        "columns": null
+      },
+      "id": "Field_03gmaif",
+      "key": "productName",
+      "description": "Enter the name of the product you are updating.",
+      "validate": {
+        "required": true
+      },
+      "properties": { }
+    },
+    {
+      "label": "Updated Stock Quantity",
+      "type": "number",
+      "layout": {
+        "row": "Row_0jbs3o0",
+        "columns": null
+      },
+      "id": "Field_10qywjk",
+      "key": "stockQuantity",
+      "description": "Enter the current quantity available for sale.",
+      "validate": {
+        "required": true,
+        "min": "0"
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Availability Start Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_06dgz2g",
+        "columns": null
+      },
+      "id": "Field_0rx0c7w",
+      "key": "availabilityStartDate",
+      "description": "Select the date the product becomes available.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Availability End Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_07rq35t",
+        "columns": null
+      },
+      "id": "Field_0zhi2kj",
+      "key": "availabilityEndDate",
+      "description": "Select the final date the product will be available.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Harvest Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_16ee2fz",
+        "columns": null
+      },
+      "id": "Field_1k3cdgf",
+      "key": "harvestDate",
+      "description": "Select the date the product was harvested or produced, if applicable."
+    },
+    {
+      "label": "Additional Notes",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_056cs1z",
+        "columns": null
+      },
+      "id": "Field_02lr7y9",
+      "key": "additionalNotes",
+      "description": "Add any extra information about the stock or availability update."
+    }
+  ],
+  "type": "default"
+}
